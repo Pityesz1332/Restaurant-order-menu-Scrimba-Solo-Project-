@@ -22,11 +22,16 @@ document.querySelector('.modal-pay-btn').addEventListener('click', (e) => {
 
     modalOverlay.style.display = "none";
 
-    order.innerHTML = `
-        <div class="order-container">
-            <h1 class="thank-msg">Thanks, ${userName}! Your order is on it's way.</h1>
-        </div>
-    `;
+    const container = document.createElement("div");
+    container.className = "order-container";
+
+    const h1 = document.createElement("h1");
+    h1.className = "thank-msg";
+    h1.textContent = `Thanks, ${userName}! Your order is on its way.`;
+
+    container.appendChild(h1);
+    order.innerHTML = "";
+    order.appendChild(container);
 });
 
 order.addEventListener('click', (e) => {
