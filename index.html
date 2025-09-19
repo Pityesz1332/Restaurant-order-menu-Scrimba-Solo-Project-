@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <title>Restaurant menu</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header-title">
+            <h1>Jimmy's Diner</h1>
+            <h3>The best burgers and pizzas in town.</h3>
+        </div>
+    </header>
+    
+    <section class="items" id="items">
+        <!-- Items -->
+    </section>
+
+    <section class="order" id="order">
+        <!-- Order -->
+    </section>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <h1>Enter card details</h1>
+            <button class="close-modal-btn" id="close-modal-btn">X</button>
+            <form>
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="text" name="card-number" placeholder="Enter card number" required>
+                <input type="text" name="ccv" placeholder="Enter CVV" required>
+            </form>
+            <button class="modal-pay-btn" type="submit">Pay</button>
+        </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
