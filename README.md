@@ -1,3 +1,5 @@
+Project link: https://restaurant-order-menu-scrimba-solo.vercel.app/
+
 # Getting Started
 Install the dependencies and run the project
 ```
